@@ -71,29 +71,29 @@ INSERT INTO Orders (OrderID, customerID, Description, OrderDate, TotalAmount) VA
 select * from Orders;
 
 INSERT INTO OrderDetails (OrderDetailID, OrderID, ProductID, Quantity) VALUES
-						(401, 301, 201, 1),  -- Laptop in Order 301
-						(402, 301, 209, 1),  -- Mouse in Order 301
-						(403, 302, 202, 1),  -- Smartphone in Order 302
-						(404, 302, 205, 1),  -- Earbuds in Order 302
-						(405, 303, 203, 1),  -- Tablet in Order 303
-						(406, 303, 204, 1),  -- Smartwatch in Order 303
-						(407, 305, 207, 1),  -- Monitor in Order 305
-						(408, 305, 208, 1),  -- External HDD in Order 305
-						(409, 309, 205, 1),  -- Earbuds in Order 309
-						(410, 309, 206, 1);  -- Keyboard in Order 309
+						(401, 301, 201, 1),  
+						(402, 301, 209, 1),  
+						(403, 302, 202, 1),  
+						(404, 302, 205, 1),  
+						(405, 303, 203, 1),  
+						(406, 303, 204, 1),  
+						(407, 305, 207, 1),  
+						(408, 305, 208, 1),  
+						(409, 309, 205, 1),  
+						(410, 309, 206, 1); 
 select * from OrderDetails
 
 INSERT INTO Inventory (InventoryID, ProductID, QuantityInStock, LastStockUpdate) VALUES
-						(501, 201, 15, '2024-03-01'),  -- Laptop stock
-						(502, 202, 20, '2024-03-02'),  -- Smartphone stock
-						(503, 203, 12, '2024-03-03'),  -- Tablet stock
-						(504, 204, 25, '2024-03-04'),  -- Smartwatch stock
-						(505, 205, 30, '2024-03-05'),  -- Earbuds stock
-						(506, 206, 18, '2024-03-06'),  -- Keyboard stock
-						(507, 207, 10, '2024-03-07'),  -- Monitor stock
-						(508, 208, 22, '2024-03-08'),  -- External HDD stock
-						(509, 209, 28, '2024-03-09'),  -- Mouse stock
-						(510, 210, 8, '2024-03-10');   -- Gaming Chair stock
+						(501, 201, 15, '2024-03-01'), 
+						(502, 202, 20, '2024-03-02'),  
+						(503, 203, 12, '2024-03-03'),  
+						(504, 204, 25, '2024-03-04'),  
+						(505, 205, 30, '2024-03-05'),  
+						(506, 206, 18, '2024-03-06'),  
+						(507, 207, 10, '2024-03-07'),  
+						(508, 208, 22, '2024-03-08'),  
+						(509, 209, 28, '2024-03-09'),  
+						(510, 210, 8, '2024-03-10');  
 
 
 select * from Inventory
