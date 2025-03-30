@@ -9,8 +9,6 @@ USE UniversityRecords
 -- 3. Delete the UniversityRecords database safely
 DROP DATABASE UniversityRecords;
 
-
----recreate UniversityRecords DB
 -- 5. Create a Students table with appropriate columns and data types
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
@@ -29,8 +27,6 @@ EXEC sp_rename 'Students', 'UniversityStudents';
 -- 8. Delete the UniversityStudents table
 DROP TABLE UniversityStudents;
 
-
-----execute Students table creation 
 -- 9. Insert five sample student records into the Students table
 INSERT INTO Students (StudentID, FirstName, LastName, Age, Department, Email) VALUES
 (1, 'John', 'Doe', 20, 'Computer Science', 'john.doe@example.com'),
